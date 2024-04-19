@@ -15,7 +15,6 @@ script:
 
 deploy:
   provider: pages
-  token: $GITHUB_TOKEN
-  edge: true
+  deploy_key: $deploy_key
   on:
     branch: main
