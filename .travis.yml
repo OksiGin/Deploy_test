@@ -13,3 +13,8 @@ install:
 # Commands to run tests
 script:
   - npm test
+
+deploy:
+  provider: pages:git
+  token: $GITHUB_TOKEN
+  edge: true
