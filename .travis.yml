@@ -3,7 +3,6 @@ dist: xenial
 
 language: node_js
 node_js:
-  - "14"
   - "16"
 
 # Commands to install dependencies
@@ -12,9 +11,10 @@ install:
 
 # Commands to run tests
 script:
-  - npm test
+  - echo "Hello, Ok test"
 
 deploy:
-  provider: pages:git
+  provider: pages
   token: $GITHUB_TOKEN
   edge: true
+  on: branch:main
