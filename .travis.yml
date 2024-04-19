@@ -1,8 +1,15 @@
+os: linux
+dist: xenial
+
 language: node_js
 node_js:
   - "14"
   - "16"
+
+# Commands to install dependencies
 install:
   - npm install
+
+# Commands to run tests
 script:
   - npm test
