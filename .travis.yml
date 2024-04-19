@@ -12,9 +12,3 @@ install:
 # Commands to run tests
 script:
   - echo "Hello, Ok test"
-
-deploy:
-  provider: pages
-  deploy_key: $deploy_key
-  on:
-    branch: main
