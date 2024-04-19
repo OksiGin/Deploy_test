@@ -17,3 +17,5 @@ deploy:
   provider: pages
   token: $GITHUB_TOKEN
   edge: true
+  on:
+    branch: main
